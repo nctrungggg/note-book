@@ -5,16 +5,16 @@
   margin-bottom: 5rem;
 
   position: relative;
+  &-overlay {
+    @include overlay;
+  }
 
   &-img {
-    height: 280px;
+    height: 28rem;
+    overflow: hidden;
+    border-radius: 5px;
   }
 
-  &-cate {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-  }
   @include mobile {
     width: 100%;
     margin-bottom: 3rem;

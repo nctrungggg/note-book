@@ -8,6 +8,9 @@
   height: 60rem;
   position: relative;
   z-index: -1;
+  &-overlay {
+    @include overlay;
+  }
 
   &-card {
     position: absolute;

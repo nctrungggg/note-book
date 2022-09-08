@@ -10,7 +10,7 @@ function HomePage(props) {
     <>
       <Popular />
       <BigPost />
-      <div style={{ padding: "10rem 0" }}>
+      <div style={{ padding: "8rem 0" }}>
         <RelatedPosts heading="Editor’s Pick" />
       </div>
     </>

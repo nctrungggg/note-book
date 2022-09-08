@@ -1,6 +1,6 @@
 import React from "react";
 import navbarList from "../../data/navbarList";
-import Social from "../social/Social";
+import Social from "../core/social/Social";
 import NavbarItem from "./NavbarItem";
 import "./NavbarMobile.scss";
 

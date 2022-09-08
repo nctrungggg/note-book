@@ -1,0 +1,16 @@
+@use "../../scss/" as *;
+
+.card-img {
+  position: relative;
+  height: 100%;
+
+  &-overlay {
+    @include overlay;
+  }
+
+  &-cate {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+}

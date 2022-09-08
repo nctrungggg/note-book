@@ -1,6 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
-import popularList from "../../data/popularList";
+import popularList from "../../../data/popularList";
 import TagItem from "./Tag";
 import "./TagList.scss";
 

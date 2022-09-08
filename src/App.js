@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Banner from "./components/banner/Banner";
-import NotFound from "./components/notFound/NotFound";
+import NotFound from "./components/core/notFound/NotFound";
 import Main from "./layout/main/Main";
 import HomeDetailPage from "./pages/homeDetailPage/HomeDetailPage";
 import HomePage from "./pages/homePage/HomePage";
