@@ -1,0 +1,21 @@
+@use "../../scss/index" as *;
+
+.card-content {
+  &-date {
+    margin: 1.5rem 0;
+  }
+
+  &-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  @include mobile {
+    &-date {
+      margin: 1rem 0;
+    }
+
+    &-heading {
+      margin-bottom: 1rem;
+    }
+  }
+}

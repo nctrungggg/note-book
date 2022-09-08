@@ -1,0 +1,51 @@
+@use "../../scss/" as *;
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  position: relative;
+
+  // &::before {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   width: 1px;
+  //   height: 90%;
+  //   background-color: #b5b5b5;
+  //   left: -1.7rem;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
+
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   width: 1px;
+  //   height: 90%;
+  //   background-color: #b5b5b5;
+  //   right: -1.7rem;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
+
+  & li {
+    line-height: 1;
+  }
+
+  & img {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  @include mobile {
+    & img {
+      width: 2.8rem;
+    }
+  }
+}

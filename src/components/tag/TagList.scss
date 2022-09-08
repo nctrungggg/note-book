@@ -1,0 +1,23 @@
+@use "../../scss/" as *;
+
+.tagList {
+  display: flex;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+
+  & > li {
+    transition: 0.2s ease-in-out;
+  }
+
+  & li:first-child {
+    color: $secondary-color;
+  }
+
+  & li:hover {
+    color: $secondary-color;
+  }
+
+  @include mobile {
+    gap: 1rem 1.5rem;
+  }
+}

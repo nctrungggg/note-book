@@ -1,0 +1,40 @@
+@use "../../scss/" as *;
+
+.navbar__item {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: $gray-txt-color;
+  position: relative;
+  font-weight: 500;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $secondary-color;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -6px;
+    transition: 0.8s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  @include mobile {
+    font-size: 1.8rem;
+  }
+}
+
+.active {
+  color: $primary-color;
+}

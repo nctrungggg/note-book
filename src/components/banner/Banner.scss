@@ -1,0 +1,28 @@
+@use "../../scss/index" as *;
+
+.banner {
+  width: 100%;
+  right: 0;
+  left: 0;
+  background-image: url("../../assets//imgs/banner.png");
+  height: 60rem;
+  position: relative;
+  z-index: -1;
+
+  &-card {
+    position: absolute;
+    max-width: 530px;
+
+    left: 7rem;
+    top: 60%;
+    transform: translateY(-50%);
+  }
+
+  @include mobile {
+    &-card {
+      left: 3rem;
+      top: 50%;
+      padding-right: 3rem;
+    }
+  }
+}

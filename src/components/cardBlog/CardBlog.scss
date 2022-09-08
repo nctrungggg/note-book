@@ -1,0 +1,22 @@
+@use "../../scss/" as *;
+
+.card-blog {
+  width: 31rem;
+  margin-bottom: 5rem;
+
+  position: relative;
+
+  &-img {
+    height: 280px;
+  }
+
+  &-cate {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  @include mobile {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}

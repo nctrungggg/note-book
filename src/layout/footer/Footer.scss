@@ -1,0 +1,58 @@
+@use "../../scss/" as *;
+
+.footer {
+  &-top {
+    background-color: #212529;
+
+    &-wrap {
+      padding: 11rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &-heading {
+    margin-bottom: 1.6rem;
+  }
+
+  &-text {
+    margin-bottom: 1.8rem;
+  }
+
+  &-headquater {
+    max-width: 11.5rem;
+  }
+
+  &-bottom {
+    height: 8rem;
+    background-color: #343a40;
+
+    &-wrap {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > p {
+        color: $gray-txt-color;
+        font-size: 1.4rem;
+      }
+
+      & > p:first-child {
+        font-weight: 700;
+      }
+    }
+  }
+
+  @include mobile {
+    &-top-wrap {
+      padding: 6rem;
+      flex-direction: column;
+    }
+
+    &-bottom {
+      padding: 0 3rem;
+    }
+  }
+}

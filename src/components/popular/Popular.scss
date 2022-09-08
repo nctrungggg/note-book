@@ -1,0 +1,31 @@
+@use "../../scss/" as *;
+
+div .popular {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 3rem 0;
+  }
+
+  &-card {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  &-view {
+    min-width: 5rem;
+  }
+
+  @include mobile {
+    margin: 8rem 0;
+    padding: 0 3rem;
+
+    &-menu {
+      margin: 2.5rem 0;
+    }
+  }
+}

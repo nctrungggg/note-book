@@ -1,0 +1,92 @@
+@use "../../scss/" as *;
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: $header-height;
+  background: rgba(0, 0, 0, 0.2);
+
+  color: $primary-color;
+
+  z-index: 10;
+  transition: 0.5s ease-in-out;
+
+  &-right {
+    display: flex;
+    align-items: center;
+  }
+
+  &-wrap {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+  }
+
+  &-line {
+    width: 1px;
+    background-color: $gray-txt-color;
+    height: 20px;
+
+    margin: 0 1.7rem;
+  }
+
+  &-menu-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 8;
+
+    opacity: 0;
+    visibility: hidden;
+
+    bottom: 0;
+    padding: 3rem 2rem;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+  }
+  &-icon {
+    display: none;
+  }
+
+
+
+  @include mobile {
+    &-wrap {
+      padding: 3rem;
+    }
+
+    &-right {
+      display: none;
+    }
+
+    &-icon {
+      display: block;
+      font-size: 2.2rem;
+      z-index: 10;
+    }
+  }
+}
+
+.shrink {
+  height: $header-shrink-height;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0%);
+}

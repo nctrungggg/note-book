@@ -1,0 +1,39 @@
+@use "../../scss/" as *;
+
+.blog-card {
+  &-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  &-cate {
+    margin-bottom: 1.5rem;
+  }
+
+  &__sub-title {
+    display: flex;
+    gap: 1rem;
+
+    & p {
+      line-height: 1.8;
+      max-width: 42rem;
+    }
+  }
+
+  &__line {
+    height: 1px;
+    width: 3rem;
+    background-color: white;
+    margin-top: 1rem;
+  }
+
+  @include mobile {
+    &__sub-title {
+      flex-direction: column;
+    }
+
+    &__line {
+      margin-top: 0;
+      display: none;
+    }
+  }
+}

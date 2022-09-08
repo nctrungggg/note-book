@@ -1,0 +1,41 @@
+div .content-detail {
+  display: flex;
+  gap: 5rem;
+  &-wrap {
+    padding: 10rem 0;
+  }
+  &-heading {
+    margin-bottom: 4rem;
+  }
+
+  &-text {
+    margin-bottom: 4rem;
+  }
+
+  &-date > p {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  &-right {
+    max-width: 860px;
+  }
+
+  &-date {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+  }
+
+  &-line {
+    height: 1px;
+    width: 3rem;
+    background-color: #e5e5e5;
+  }
+}
+
+.line {
+  height: 1px;
+  width: 860px;
+  background-color: #e5e5e5;
+}
