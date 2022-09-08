@@ -1,8 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
-import DateTime from "../dateTime/DateTime";
-import Heading from "../heading/Heading";
-import Text from "../text/Text";
+import DateTime from "../core/dateTime/DateTime";
+import Heading from "../core/heading/Heading";
+import Text from "../core/text/Text";
 import "./CardContent.scss";
 
 CardContent.propTypes = {};

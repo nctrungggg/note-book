@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.scss";
-import Heading from "../../components/heading/Heading";
-import Text from "../../components/text/Text";
-import Social from "../../components/social/Social";
+import Heading from "../../components/core/heading/Heading";
+import Text from "../../components/core/text/Text";
+import Social from "../../components/core/social/Social";
 
 Footer.propTypes = {};
 

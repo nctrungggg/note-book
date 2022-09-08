@@ -1,8 +1,8 @@
 import React from "react";
-import Category from "../category/Category";
-import DateTime from "../dateTime/DateTime";
-import Heading from "../heading/Heading";
-import Text from "../text/Text";
+import Category from "../core/category/Category";
+import DateTime from "../core/dateTime/DateTime";
+import Heading from "../core/heading/Heading";
+import Text from "../core/text/Text";
 import "./CardHeading.scss";
 
 CardHeading.propTypes = {};

@@ -3,6 +3,7 @@
 .blog-card {
   &-heading {
     margin-bottom: 1.5rem;
+    z-index: 10;
   }
 
   &-cate {

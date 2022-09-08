@@ -1,7 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
+import img404 from "../../../assets/imgs/404.png";
 import Img from "../img/Img";
-import img404 from "../../assets/imgs/404.png";
 
 NotFound.propTypes = {};
 

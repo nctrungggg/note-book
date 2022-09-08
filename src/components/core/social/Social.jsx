@@ -1,5 +1,5 @@
 import React from "react";
-import iconList from "../../data/socialList";
+import iconList from "../../../data/socialList";
 import "./Social.scss";
 import SocialItem from "./SocialItem";
 

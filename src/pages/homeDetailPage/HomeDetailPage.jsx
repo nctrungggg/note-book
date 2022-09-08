@@ -12,7 +12,7 @@ function HomeDetailPage(props) {
       <ContentDetail />
 
       <div
-        style={{ background: " rgba(229, 229, 229, 0.3)", padding: "10rem 0" }}
+        style={{ background: " rgba(229, 229, 229, 0.3)", padding: "8rem 0" }}
       >
         <RelatedPosts heading="Related Posts" />
       </div>

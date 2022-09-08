@@ -1,9 +1,14 @@
+@use "../../scss/" as *;
+
 div .content-detail {
   display: flex;
-  gap: 5rem;
+  gap: 7rem;
+  flex-wrap: wrap;
+
   &-wrap {
     padding: 10rem 0;
   }
+
   &-heading {
     margin-bottom: 4rem;
   }
@@ -32,10 +37,46 @@ div .content-detail {
     width: 3rem;
     background-color: #e5e5e5;
   }
-}
 
-.line {
-  height: 1px;
-  width: 860px;
-  background-color: #e5e5e5;
+  &-user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-bottom-line {
+    height: 1px;
+    width: 860px;
+    margin-bottom: 5rem;
+    background-color: #e5e5e5;
+  }
+
+  @include mobile {
+    gap: 3rem;
+    margin-top: 5rem;
+
+    &-wrap {
+      padding: 0 3rem;
+    }
+
+    &-text {
+      margin-bottom: 3rem;
+    }
+
+    &-right {
+      max-width: 100%;
+    }
+
+    &-user-info {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    &-bottom-line {
+      max-width: 100%;
+    }
+  }
 }

@@ -1,9 +1,10 @@
 import React from "react";
-import Text from "../text/Text";
-import Heading from "../heading/Heading";
+import DateTime from "../core/dateTime/DateTime";
+import Heading from "../core/heading/Heading";
+import Social from "../core/social/Social";
+import Text from "../core/text/Text";
+import UserInfo from "../userInfor/UserInfo";
 import "./ContentDetail.scss";
-import DateTime from "../dateTime/DateTime";
-import Category from "../category/Category";
 
 const ContentDetail = () => {
   return (
@@ -77,9 +78,16 @@ const ContentDetail = () => {
               </Text>
             </div>
           </div>
-          <div className="line"></div>
+          <div className="content-detail-bottom-line"></div>
 
+          <div>
+            {" "}
+            <div className="content-detail-user-info">
+              <UserInfo />
 
+              <Social />
+            </div>
+          </div>
         </div>
       </div>
     </div>

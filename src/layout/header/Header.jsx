@@ -4,8 +4,8 @@ import { MdOutlineClose } from "react-icons/md";
 import Logo from "../../components/logo/Logo";
 import Navbar from "../../components/navbar/Navbar";
 import NavbarMobile from "../../components/navbar/NavbarMobile";
-import Search from "../../components/search/Search";
-import Social from "../../components/social/Social";
+import Search from "../../components/core/search/Search";
+import Social from "../../components/core/social/Social";
 import "./Header.scss";
 Header.propTypes = {};
 
