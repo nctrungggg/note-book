@@ -1,6 +1,7 @@
 .search {
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  line-height: 0;
 
   &:hover {
     transform: translateY(-3px);

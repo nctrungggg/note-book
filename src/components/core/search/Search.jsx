@@ -7,9 +7,9 @@ Search.propTypes = {};
 
 function Search(props) {
   return (
-    <>
-      <img src={search} alt="" className="search" />
-    </>
+    <div className="search">
+      <img src={search} alt="" />
+    </div>
   );
 }
 
